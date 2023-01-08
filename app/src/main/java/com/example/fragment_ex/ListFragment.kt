@@ -24,7 +24,10 @@ class ListFragment : Fragment() {
         binding.btnNext.setOnClickListener {
             mainActivity?.goDetail()
         }
-
+        //넘어온 데이터 대입하는 변수
+        //액티비티에서 전달한 두개의 값
+        binding.textTitle.text = arguments?.getString("1")
+        binding.textValue.text = arguments?.getString("2")
         //메서드의 반환 값이 view이기 때문에 root뷰를 넘겨주는 것
         return binding.root
     }

@@ -10,7 +10,13 @@ class MainActivity : AppCompatActivity() {
         setFragment()
     }
     fun setFragment(){
+        //화면 간 데이터 주고받기
         val listFragment: ListFragment = ListFragment()
+        var bundle = Bundle()
+        bundle.putString("1","List fragment")
+        bundle.putString("2","20230108")
+        listFragment.arguments = bundle // 값이 담긴 번들을 프래그먼트 argument에 담음
+
         val transaction = supportFragmentManager.beginTransaction() // 트랜잭션 시작
         // add 메서드 -> 프래그먼트를 레이아웃에 추가
         //replace 레이아웃에 삽입된 프래그먼트 교체
