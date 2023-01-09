@@ -22,7 +22,7 @@ class ListFragment : Fragment() {
     ): View? {
         val binding = FragmentListBinding.inflate(inflater,container,false) // 메인 액티비티 바인딩
         binding.btnNext.setOnClickListener {
-            mainActivity?.goDetail()
+            //mainActivity?.goDetail()
         }
         //넘어온 데이터 대입하는 변수
         //액티비티에서 전달한 두개의 값

@@ -17,7 +17,7 @@ class DetailFragment : Fragment() {
     ): View? {
         val binding = FragmentDetailBinding.inflate(inflater,container,false)
         binding.btnBack.setOnClickListener {
-            mainActivity.goBack()
+            //mainActivity.goBack()
         }
         return binding.root
     }
